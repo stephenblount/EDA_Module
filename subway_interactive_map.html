@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d1c16cdc377a4a5f911e92728098079d {
+                    position: relative;
+                    width: 550.0px;
+                    height: 350.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d1c16cdc377a4a5f911e92728098079d" ></div>
+        
+</body>
+<script>    
+    
+            var map_d1c16cdc377a4a5f911e92728098079d = L.map(
+                "map_d1c16cdc377a4a5f911e92728098079d",
+                {
+                    center: [40.752701200000004, -73.97724987363358],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89d1cd3a23124fcb9de53bb9112de82e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 15, "maxZoom": 15, "minZoom": 10, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var marker_c7b768d2869c4cd498a9311019b5fac4 = L.marker(
+                [40.752701200000004, -73.97724987363358],
+                {}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var icon_7bd58277ff834f26965ca2e56674df2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c7b768d2869c4cd498a9311019b5fac4.setIcon(icon_7bd58277ff834f26965ca2e56674df2c);
+        
+    
+        var popup_0061c8903c9d42a28914ae04763a49da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63149bd08a5c4434a35792a3d35d7118 = $(`<div id="html_63149bd08a5c4434a35792a3d35d7118" style="width: 100.0%; height: 100.0%;">Grand Central Station</div>`)[0];
+            popup_0061c8903c9d42a28914ae04763a49da.setContent(html_63149bd08a5c4434a35792a3d35d7118);
+        
+
+        marker_c7b768d2869c4cd498a9311019b5fac4.bindPopup(popup_0061c8903c9d42a28914ae04763a49da)
+        ;
+
+        
+    
+    
+            var marker_a419c216d4b740c7841ec41c6dbfbf97 = L.marker(
+                [40.749567, -73.98795],
+                {}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var icon_e80492d76227494196f28c9d095cee98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a419c216d4b740c7841ec41c6dbfbf97.setIcon(icon_e80492d76227494196f28c9d095cee98);
+        
+    
+        var popup_8f2124f0144c42b1b0f8ed3ad04b2075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c99cedfb21b4456d86d0fabd0b81564c = $(`<div id="html_c99cedfb21b4456d86d0fabd0b81564c" style="width: 100.0%; height: 100.0%;">34 Street & Herald Square</div>`)[0];
+            popup_8f2124f0144c42b1b0f8ed3ad04b2075.setContent(html_c99cedfb21b4456d86d0fabd0b81564c);
+        
+
+        marker_a419c216d4b740c7841ec41c6dbfbf97.bindPopup(popup_8f2124f0144c42b1b0f8ed3ad04b2075)
+        ;
+
+        
+    
+    
+            var marker_4fa2e01887ac4b088304f1a130483c88 = L.marker(
+                [40.7357611, -73.9906491],
+                {}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var icon_1966b5a58eef42e7a05a392376dc57e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4fa2e01887ac4b088304f1a130483c88.setIcon(icon_1966b5a58eef42e7a05a392376dc57e4);
+        
+    
+        var popup_182abbfc2e3b42ce8203c9d7ca2a379a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe85356450224436a9e7fe273db59bad = $(`<div id="html_fe85356450224436a9e7fe273db59bad" style="width: 100.0%; height: 100.0%;">14 Street & Union square</div>`)[0];
+            popup_182abbfc2e3b42ce8203c9d7ca2a379a.setContent(html_fe85356450224436a9e7fe273db59bad);
+        
+
+        marker_4fa2e01887ac4b088304f1a130483c88.bindPopup(popup_182abbfc2e3b42ce8203c9d7ca2a379a)
+        ;
+
+        
+    
+    
+            var marker_3d421018614e494d82b31e1cf792a78e = L.marker(
+                [40.7101857, -74.0076638],
+                {}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var icon_6724cd56b5bd4e7b90aa21eb3b3c7c33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3d421018614e494d82b31e1cf792a78e.setIcon(icon_6724cd56b5bd4e7b90aa21eb3b3c7c33);
+        
+    
+        var popup_2e41884857ca4489a7b10dcb368af44f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_807495c109dd4403863d914429a89d8f = $(`<div id="html_807495c109dd4403863d914429a89d8f" style="width: 100.0%; height: 100.0%;">Fulton Street Station</div>`)[0];
+            popup_2e41884857ca4489a7b10dcb368af44f.setContent(html_807495c109dd4403863d914429a89d8f);
+        
+
+        marker_3d421018614e494d82b31e1cf792a78e.bindPopup(popup_2e41884857ca4489a7b10dcb368af44f)
+        ;
+
+        
+    
+    
+            var marker_5843a98bfa364ada869b2676de677f90 = L.marker(
+                [40.757308, -73.989735],
+                {}
+            ).addTo(map_d1c16cdc377a4a5f911e92728098079d);
+        
+    
+            var icon_61860a7a93c24741ae03dce2231f9efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5843a98bfa364ada869b2676de677f90.setIcon(icon_61860a7a93c24741ae03dce2231f9efc);
+        
+    
+        var popup_d5050d7dbe8a4275a1b99283357d5a0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aaf4811c740e4e8db1cae50512e5978e = $(`<div id="html_aaf4811c740e4e8db1cae50512e5978e" style="width: 100.0%; height: 100.0%;">42 St and Port Authority Bus Terminal</div>`)[0];
+            popup_d5050d7dbe8a4275a1b99283357d5a0e.setContent(html_aaf4811c740e4e8db1cae50512e5978e);
+        
+
+        marker_5843a98bfa364ada869b2676de677f90.bindPopup(popup_d5050d7dbe8a4275a1b99283357d5a0e)
+        ;
+
+        
+    
+</script>
