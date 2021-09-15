@@ -14,3 +14,6 @@ After the five most trafficked stations were found, the data was parsed into day
 To try to draw more meaningful conclusions for WTWY, weather data was brought in from the National Oceanic and Atmospheric Administration's (NOAA) website. This information was collected daily at Central Park, NYC and contained the maximum and minimum temperatures for each day. An average temperature for each day was found and merged with a data frame relating average temperature to total subway movement over each given date. These temperatures were gathered into ranges and an average population movement by temperature range was found and plotted below. This chart can show that there tends to be more people moving during warmer weather periods.
 
 ![](Images/movement_by_temp.png)
+
+
+<iframe src="subway_interactive_map.html" title="Basic map with folium" style={{ border: "none", width: '800px', height: '300px' }}></iframe>
