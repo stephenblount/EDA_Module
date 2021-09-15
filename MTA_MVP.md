@@ -15,5 +15,3 @@ To try to draw more meaningful conclusions for WTWY, weather data was brought in
 
 ![](Images/movement_by_temp.png)
 
-
-<iframe src="subway_interactive_map.html" title="Basic map with folium" style={{ border: "none", width: '800px', height: '300px' }}></iframe>
