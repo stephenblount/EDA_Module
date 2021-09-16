@@ -1,2 +1,2 @@
-# NDA_Module
-Repository for METIS NDA Module
+# EDA_Module
+Repository for METIS EDA Module
